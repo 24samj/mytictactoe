@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/TicTacToe/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/TicTacToe/css/index.css" />
+        <audio
+            id="myaudio"
+            src="/TicTacToe/Alec Benjamin - The Saddest Song (Fuego Araneae Remix).mp3"></audio>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="overlay">
+            <button id="play-button">Play Game</button>
+        </div>
+        <div id="currentplayer"></div>
+        <div class="board">
+            <div class="row d-flex justify-content-center">
+                <div class="spot" id="00" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="01" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="02" onclick="placeCoin(this.id)"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="spot" id="10" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="11" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="12" onclick="placeCoin(this.id)"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="spot" id="20" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="21" onclick="placeCoin(this.id)"></div>
+                <div class="spot" id="22" onclick="placeCoin(this.id)"></div>
+            </div>
+        </div>
+
+        <script src="/TicTacToe/js/bootstrap.bundle.min.js"></script>
+        <script src="/TicTacToe/js/index.js"></script>
+        <script>
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.1;
+        </script>
+    </body>
+</html>
